@@ -1,0 +1,300 @@
+#FormHoteles h2 {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.search-container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.search-input-group {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.search-input {
+	padding-left: 36px;
+	border: 1px solid #eaeaea;
+	border-radius: 3px;
+	height: 36px;
+	max-width: 100%;
+	
+}
+
+.search-group {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+#disclaimerMulti, 
+#disclaimer, 
+.validar::placeholder,
+.validar[type="date"] {
+	color: #f15153;
+}
+
+.search-input-date {
+	padding-left: 30px;
+	border: 1px solid #eaeaea;
+	border-radius: 3px;
+	height: 36px;
+	width: 100%;
+	margin-left: 5px !important;
+	position: relative;
+}
+
+.search-input-date:first-child{
+	margin-left: 0px !important;
+}
+
+.search-group-dates{
+	display: flex;
+	flex-direction: row;
+}
+
+.disclaimer_buscadores {
+	width: 100%;
+	max-width: 100%;
+	font-size: 12px;
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+#menores_contenedor {
+	/*display: none;*/
+}
+
+#menores_contenedor label {
+	margin-bottom: 5px;
+}
+
+.img-marker {
+	background: url(../img/map-marker.svg);
+}
+
+.img-bed {
+	background: url(../img/bed.svg);
+}
+
+.img-user {
+	background: url(../img/user.svg);
+}
+
+.img-child {
+	background: url(../img/child.svg);
+}
+
+.img-calendar {
+	background: url(../img/calendar.svg);
+}
+
+input[type="date"] {
+	background:#fff url(../img/calendar.svg)  6px 50% no-repeat ;
+}
+
+input[type="date"]::-webkit-inner-spin-button {
+	display: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+	opacity: 0;
+	position: absolute;
+	top: 8px;
+	left: -23px;
+	width: 16px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+	cursor: pointer;
+}
+
+input[type="date"] {
+	margin: 0 auto;
+
+}
+
+input[type="date"]:before {
+	content: attr(placeholder) !important;
+	margin-right: 5px;
+}
+
+input[type="date"]:focus:before,
+input[type="date"]:valid:before {
+	content: "";
+}
+
+.img-marker,
+.img-bed,
+.img-user,
+.img-child,
+.img-calendar {
+	background-repeat: no-repeat;
+	background-position: 6px 50%;
+	background-size: 16px 100%;
+}
+
+.margin-right {
+	margin-right: 5px;
+}
+
+.button {
+	width: 100%;
+}
+
+.input-container {
+	margin: 15px 0px;
+}
+
+.ocultar {
+	/*display: none;*/
+}
+
+.search-x {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.search-menores {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	flex-wrap: wrap;
+	/*justify-content: space-between;*/
+}
+
+.search-w {
+	width: 100%;
+	max-width: 23%;
+}
+
+#habitacion-2,
+#habitacion-3,
+#habitacion-4 {
+	display: none;
+}
+
+#menores_contenedor-1,
+#menores_contenedor-2,
+#menores_contenedor-3,
+#menores_contenedor-4 {
+	display: none;
+}
+
+.autocomplete-items {
+	z-index: 99;
+}
+
+.search-menores div {
+	margin-right: 5px;
+}
+
+.search-menores div:last-child {
+	margin-right: 0px;
+}
+
+.search-button {
+    max-width: 200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.search-close {
+	cursor: pointer;
+}
+
+/* Style for the autocomplete items */
+.autocomplete-items {
+    position: absolute;        /* Absolute positioning */
+    top: 100%;                /* Start right after the input */
+    left: 0;                  /* Align to the left side of the input */
+    right: 0;                 /* Stretch to the right side of the container */
+    border: 1px solid #ccc;   /* Border for the list */
+    border-top: none;         /* Remove the top border to blend with the input */
+    z-index: 1000;            /* High z-index to float above other elements */
+    max-height: 200px;        /* Maximum height */
+    overflow-y: auto;         /* Add scrollbar if content exceeds max height */
+    background-color: #fff;   /* Background color for the list */
+}
+
+.autocomplete-items div {
+    padding: 10px;            /* Padding for each item */
+    cursor: pointer;          /* Change cursor to pointer */
+    border-bottom: 1px solid #ccc; /* Border between items */
+}
+
+.autocomplete-items div:hover {
+    background-color: #e9e9e9; /* Background color for hovered item */
+}
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { /*...*/ }
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+	.search-group {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.search-w {
+		width: 100%;
+		max-width: 13%;
+	}
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { /*...*/ }
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	.search-div {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		margin: 0 auto;
+	}
+	.search-container {
+		width: 90%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.input-container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		width: 100%;
+	}
+
+	.search-w {
+		width: 100%;
+		max-width: 14%;
+	}
+
+	#habitacion-container {
+		width: 100%;
+	}
+
+	.button {
+		margin-top: 33px;
+	}
+
+	.search-menores {
+		flex-wrap: nowrap;
+		justify-content: start;
+	}
+
+	#FormHoteles h2 {
+		width: 95%;
+		margin: 0 auto;
+	}
+}
